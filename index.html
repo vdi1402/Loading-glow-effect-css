@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Loader</title>
+  </head>
+  
+  <style>
+  body{
+  margin:0;
+  padding:0;
+  background:rgba(0,0,0);
+}
+.loader{
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  display:flex;
+  
+}
+.loader li{
+  list-style:none;
+  width:40px;
+  height:40px;
+ 
+  border-radius:50%;
+  animation:grow 1.6s ease-in-out infinite;
+}
+
+
+
+  @keyframes grow
+  {
+    0% , 40% , 100%
+    {
+      transform:scale(0.2);
+    }
+    20%{
+       transform:scale(1);
+
+    }
+  }
+
+ul li:nth-child(1){
+  animation-delay:-1.4s;
+  background:#ffff00;
+  box-shadow:0 0 50px #ffff00;
+  
+}
+ul li:nth-child(2){
+  animation-delay:-1.2s;
+  background:#DF367C;
+  box-shadow:0 0 50px #DF367C;
+  
+}
+ul li:nth-child(3){
+  animation-delay:-1s;
+  background:#883955;
+  box-shadow:0 0 50px #883955;
+  
+}
+ul li:nth-child(4){
+  animation-delay:-0.8s;
+  background:#587B7F;
+  box-shadow:0 0 50px #587B7F;
+  
+}
+ul li:nth-child(5){
+  animation-delay:-0.6s;
+  background:#0C7489;
+  box-shadow:0 0 50px #0C7489;
+  
+}
+ul li:nth-child(6){
+  animation-delay:-0.4s;
+  background:#EB4511;
+  box-shadow:0 0 50px #EB4511;
+  
+}
+ul li:nth-child(7){
+  animation-delay:-0.2s;
+  background:#71B340;
+  box-shadow:0 0 50px #71B340;
+  
+}
+
+
+
+
+  </style>
+  <body>
+   <div>
+  <ul class="loader">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</div>
+    
+
+  </body>
+</html>
